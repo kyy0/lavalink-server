@@ -1,5 +1,5 @@
 server:
-  port: 2333
+  port: ${PORT:2333}
   address: 0.0.0.0
 
 lavalink:
@@ -11,13 +11,6 @@ lavalink:
       bandcamp: true
       twitch: true
       http: true
-    bufferDurationMs: 400
-    frameBufferDurationMs: 5000
-    playerUpdateInterval: 5
-
-metrics:
-  prometheus:
-    enabled: false
 
 logging:
   level:
